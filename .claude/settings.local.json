@@ -2,7 +2,15 @@
   "permissions": {
     "allow": [
       "Bash(npm install:*)",
-      "Bash(npm i:*)"
+      "Bash(npm i:*)",
+      "mcp__neon__list_projects",
+      "mcp__neon__get_database_tables",
+      "mcp__neon__prepare_database_migration",
+      "mcp__neon__complete_database_migration",
+      "mcp__neon__run_sql"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "neon"
+  ]
 }
