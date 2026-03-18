@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { format } from 'date-fns';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { getWorkoutsForDate } from '@/data/workouts';
@@ -22,7 +23,15 @@ export default async function DashboardPage({
       </div>
 
       {workouts.length === 0 && (
-        <p className="text-muted-foreground">No workouts logged for this date.</p>
+        <div className="flex flex-col items-start gap-3">
+          <p className="text-muted-foreground">No workouts logged for this date.</p>
+          <Link
+            href="/dashboard/workout/new"
+            className="inline-flex h-8 items-center justify-center rounded-lg bg-primary px-2.5 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/80"
+          >
+            Log New Workout
+          </Link>
+        </div>
       )}
 
       {workouts.map((workout) => (
