@@ -7,7 +7,17 @@
       "mcp__neon__get_database_tables",
       "mcp__neon__prepare_database_migration",
       "mcp__neon__complete_database_migration",
-      "mcp__neon__run_sql"
+      "mcp__neon__run_sql",
+      "Bash(cd \"C:/Progetti/NextJS/liftingdiarycourse\" && npm run build 2>&1)",
+      "Bash(find \"C:\\\\Progetti\\\\NextJS\\\\liftingdiarycourse\" -type f -name \"*.env*\" 2>/dev/null | head -20)",
+      "Bash(find /c/Progetti/NextJS/liftingdiarycourse/src -type f \\\\\\( -name \"*.tsx\" -o -name \"*.ts\" -o -name \"*.json\" \\\\\\) 2>/dev/null | head -30)",
+      "Bash(find /c/Progetti/NextJS/liftingdiarycourse/src -type f | grep -E \"\\\\.\\(tsx|ts|json\\)$\" | sort)",
+      "Bash(npx shadcn:*)",
+      "Bash(node -e \"const p = require\\('@base-ui/react/popover'\\); console.log\\(Object.keys\\(p\\)\\)\" 2>&1)",
+      "Bash(node -e \"const p = require\\('@base-ui/react'\\); console.log\\(Object.keys\\(p\\)\\)\" 2>&1)",
+      "Bash(node -e \"const p = require\\('@base-ui/react'\\); console.log\\(Object.keys\\(p.Popover\\)\\)\" 2>&1)",
+      "Bash(node -e \"\nconst { Popover } = require\\('@base-ui/react'\\);\nconst trigger = Popover.Trigger;\n// Check props by looking at source\nconsole.log\\(trigger.toString\\(\\).substring\\(0, 500\\)\\);\n\" 2>&1)",
+      "Bash(npx tsc:*)"
     ]
   },
   "enabledMcpjsonServers": [
