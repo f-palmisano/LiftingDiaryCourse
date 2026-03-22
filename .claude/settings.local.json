@@ -17,7 +17,11 @@
       "Bash(node -e \"const p = require\\('@base-ui/react'\\); console.log\\(Object.keys\\(p\\)\\)\" 2>&1)",
       "Bash(node -e \"const p = require\\('@base-ui/react'\\); console.log\\(Object.keys\\(p.Popover\\)\\)\" 2>&1)",
       "Bash(node -e \"\nconst { Popover } = require\\('@base-ui/react'\\);\nconst trigger = Popover.Trigger;\n// Check props by looking at source\nconsole.log\\(trigger.toString\\(\\).substring\\(0, 500\\)\\);\n\" 2>&1)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"require\\('zod'\\)\" 2>&1 || echo \"NOT FOUND\")",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git checkout:*)"
     ]
   },
   "enabledMcpjsonServers": [

@@ -22,6 +22,10 @@ The `/docs` directory contains the authoritative coding standards for this proje
 |---|---|---|
 | UI components, styling, date formatting | `docs/ui.md` | Any time you touch a component, page, or style |
 | Data fetching, database queries, auth scoping | `docs/data-fetching.md` | Any time you fetch data or write a database query |
+| Data mutations, server actions, validation | `docs/data-mutations.md` | Any time you write a server action or mutate data |
+| Authentication | `docs/auth.md` | Any time you touch auth, middleware, or user identity |
+| Server Components, params, searchParams | `docs/server-components.md` | Any time you write a page or layout Server Component |
+| Routing, route protection, URL structure | `docs/routing.md` | Any time you add a new page, route, or touch middleware |
 
 **If a relevant docs file exists for the area you are working in, reading it is mandatory before writing a single line of code.**
 
@@ -43,6 +47,10 @@ npx drizzle-kit studio     # Open Drizzle Studio (database browser)
 
 - /docs/ui.md
 - /docs/data-fetching.md
+- /docs/data-mutations.md
+- /docs/auth.md
+- /docs/server-components.md
+- /docs/routing.md
 
 ## Architecture
 
