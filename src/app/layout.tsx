@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 import DarkModeToggle from "@/app/components/DarkModeToggle";
+import { Button } from "@/components/ui/button";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -34,14 +35,10 @@ export default function RootLayout({
             <DarkModeToggle />
             <Show when="signed-out">
               <SignInButton mode="modal">
-                <button className="px-4 py-2 rounded-md bg-black text-white dark:bg-white dark:text-black text-sm font-medium">
-                  Sign In
-                </button>
+                <Button>Sign In</Button>
               </SignInButton>
               <SignUpButton mode="modal">
-                <button className="px-4 py-2 rounded-md border border-black dark:border-white text-sm font-medium">
-                  Sign Up
-                </button>
+                <Button variant="outline">Sign Up</Button>
               </SignUpButton>
             </Show>
             <Show when="signed-in">
